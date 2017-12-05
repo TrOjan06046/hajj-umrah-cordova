@@ -1,0 +1,39 @@
+{
+  "cordova-plugin-whitelist": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-whitelist@^1.3.2"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "cordova-plugin-facebook4": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-facebook4@^1.9.1"
+    },
+    "is_top_level": true,
+    "variables": {
+      "APP_ID": "205101850032290",
+      "APP_NAME": "Sapa Haji"
+    }
+  },
+  "cordova-plugin-googleplus": {
+    "source": {
+      "type": "registry",
+      "id": "https://github.com/EddyVerbruggen/cordova-plugin-googleplus"
+    },
+    "is_top_level": true,
+    "variables": {
+      "REVERSED_CLIENT_ID": "774187763541-fe5fs9615m3g00g5dkp0vts9ami3rmb0.apps.googleusercontent.com"
+    }
+  },
+  "cordova-plugin-inappbrowser": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-inappbrowser@1.7.1"
+    },
+    "is_top_level": true,
+    "variables": {}
+  }
+}

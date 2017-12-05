@@ -1,0 +1,762 @@
+<!--A Design by W3layouts
+Author: W3layout
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>SapaHaji</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Flat Profile App Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android  Compatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() {setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<meta charset utf="8">
+       <!--font-awsome-css-->
+<link rel="stylesheet" href="css/font-awesome.min.css"> 
+		<!--bootstrap-->
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+		<!--custom css-->
+<link href="css/style.css" rel="stylesheet" type="text/css"/>
+<!--component-css-->
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/waitMe.min.css">
+<script src="js/waitMe.min.js"></script>
+<script src="js/loader.js"></script>
+<script src="js/moment.js"></script>
+<script src="js/moment-precise-range.js"></script>
+<!-- <link type="text/css" rel="stylesheet" href="css/style2.css" /> -->
+<!-- <link rel="stylesheet" type="text/css" href="css/component.css" /> -->
+<script type="text/javascript" src="js/base_url.js"></script>
+			 <!--script-->
+<script src="js/bigSlide.js"></script>
+    <script>
+		$(document).ready(function() {
+		$('.menu-link').bigSlide({
+		    menu: '#menu',
+		    side: 'right'
+	  	});
+	});
+    </script>
+            <!--script-->
+<script src="js/responsiveslides.min.js"></script>
+	 <script>
+		$(function () {
+		  $("#slider").responsiveSlides({
+			auto: true,
+			nav: true,
+			speed: 500,
+			namespace: "callbacks",
+			pager: true,
+		  });
+		});
+	  </script>
+		<!--script-->
+		<script src="js/pie-chart.js" type="text/javascript"></script>
+ <script type="text/javascript">
+
+        $(document).ready(function () {
+           
+			 $('#demo-pie-1').pieChart({
+                barColor: '#68b828',
+                trackColor: '#E4E2E2',
+                lineCap: 'butt',
+                lineWidth: 10,
+                onStep: function (from, to, percent) {
+                    $(this.element).find('.pie-value').text(Math.round(percent) + '%');
+                }
+            });
+
+            $('#demo-pie-2').pieChart({
+                barColor: '#5bc0de',
+                trackColor: '#E4E2E2',
+                lineCap: 'butt',
+                lineWidth: 10,
+                onStep: function (from, to, percent) {
+                    $(this.element).find('.pie-value').text(Math.round(percent) + '%');
+                }
+            });
+
+            $('#demo-pie-3').pieChart({
+                barColor: '#d9534f',
+                trackColor: '#E4E2E2',
+                lineCap: 'square',
+                lineWidth: 10,
+                onStep: function (from, to, percent) {
+                    $(this.element).find('.pie-value').text(Math.round(percent) + '%');
+                }
+            });
+
+           
+        });
+
+    </script>
+<link href='//fonts.googleapis.com/css?family=Josefin+Sans:400,700italic,700,600italic,400italic,600,300italic,300,100italic,100' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<div class="body-back">
+		<div class="masthead pdng-stn1">
+			<div id="menu" class="panel" role="navigation">
+				<div class="wrap-content">
+
+					<div class="profile-menu text-center" id="commentlist" style="max-height: 470px; overflow: auto; ">
+						<!-- <img class="img-circle border-effect" src="images/pic3.png" alt=" ">
+							<h3>Robb Hatman</h3>
+								<h4><a href="#">Admin</a></h4>
+							<div class="social-icon">
+							<ul>
+								<li><a href="#" class="facebook"><i class="fa fa-facebook"></i> facebook</a></li>
+								<li><a href="#" class="twitter"><i class="fa fa-twitter"></i> twitter</a></li>
+								<li><a href="#" class="google"><i class="fa fa-google"></i> google</a></li>
+							</ul>
+							</div> -->
+
+							<!-- <div class="comment">
+	                            <div class="media" style="background-color: white;background-color: #ccc;border-bottom: solid 1px;">
+	                              <div class="media-left">
+	                                <a href="#">
+	                                  <img class="media-object photo-profile" src="http://0.gravatar.com/avatar/38d618563e55e6082adf4c8f8c13f3e4?s=40&d=mm&r=g" width="32" height="32" alt="..." style="margin: 10px;">
+	                                </a>
+	                              </div>
+	                              <div class="media-body">
+	                                <a href="#" class="anchor-username"><h6 class="media-heading" style="margin-top: 10px;">Media heading</h6></a> 
+	                                <p style="font-size: 8px;"> Komentara Bla ... Bla ... Bla ...</p>
+	                              </div>
+	                            </div>
+	                       	</div> -->
+
+
+
+
+					</div>
+					<div class="search" style="background-color: #e5e91f;">
+						<!-- <form>
+							<input type="search" value="Search" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search';}" required="">
+							<input type="submit" value=" ">
+						</form> -->
+						<a onclick="logout()" ><img src="images/icons/pack02-05-512.png" style="width: 30px;" class="logoapps" alt=" "></i> Log Out</a>
+					</div> 
+				</div>
+			</div>
+			<div class="phone-box wrap push">
+				<div class="menu-notify">
+					<!-- <div class="profile-left">
+						<a href="#menu" class="menu-link"><i class="fa fa-chevron-left"></i></a>
+					</div> -->
+					<div class="Profile-mid">
+						<img src="images/dsgn/header.png" class="logoapps" style="margin-top: 10px;"  alt=" ">
+					</div>
+					<div class="Profile-right">
+						<a href="#menu" class="menu-link"><img src="images/icons/Bell.png" style="width: 30px;margin-top: 2px;" class="logoapps" alt=" "></i></a>
+					</div>
+					<!-- <div class="Profile-right">
+						<div id="dd1" class="wrapper-dropdown-1" tabindex="1"><i class="fa fa-gear"></i>
+							<ul class="dropdown">
+								<li><a href="#">Edit Profile </a></li>
+								<li><a href="#">Help</a></li>
+								<li><a href="#">Activity log</a></li>
+								<li><a href="#">Log Out</a></li>
+							</ul>
+								<script type="text/javascript">
+															function DropDown(el) {
+																this.dd = el;
+																this.initEvents();
+															}
+															DropDown.prototype = {
+																initEvents : function() {
+																	var obj = this;
+												
+																	obj.dd.on('click', function(event){
+																		$(this).toggleClass('active');
+																		event.stopPropagation();
+																	});	
+																}
+															}
+															$(function() {
+												
+																var dd = new DropDown( $('#dd1') );
+												
+																$(document).click(function() {
+																	// all dropdowns
+																	$('.wrapper-dropdown-1').removeClass('active');
+																});
+												
+															});
+								</script>
+						</div>
+					</div> -->
+					<div class="clearfix"></div>
+				</div>
+				<!-- <div class="detalis-grids">			
+					<div class="details-grid">
+					</div>
+					<div class="details-shade">
+						<div class="details-img">
+							<img class="img-circle border-effect1" src="images/pic3.png" alt=" " />
+						</div>
+						<h3>jhon doc</h3>
+						<span>06-586 478 4581</span>
+						<p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur Lorem Ipsum is that it has a more-or-less normal distribution of letters</p>
+					</div>
+					<div class="follow">
+						<div class="follow-grids">
+							<div class="col-sm-4 follow-left text-center">
+								<h4>Post</h4>
+								<p>15,721</p>
+							</div>
+							<div class="col-sm-4 follow-left text-center">
+								<h4>Following</h4>
+								<p>1,971</p>
+							</div>
+							<div class="col-sm-4 follow-left text-center">
+								<h4>Followers</h4>
+								<p>1,500</p>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+						<a href="#" class="button hvr-sweep-to-bottom">Follow</a>
+					</div>
+				</div> -->
+				
+
+
+				<div class="detalis-grids">			
+					
+					
+					<div class="details-shade">
+						<div class="post-pic" style="margin-bottom: 10px;">
+						    <img id="fotouser" src="images/n4.jpg" class="img-responsive" alt="" style="margin-top: 20px;border-radius: 10px;border: solid;width: 45%;">
+						</div>
+						<br>
+						<br>
+						<h3 id="namauser"></h3>
+						<span style="    color: black;">TANGGAL BERGABUNG</span>
+						<span style="    color: black;" id="tanggalgabung"></span>
+						<a onclick="editprofile()"><i class="glyphicon glyphicon-edit"></i> Edit Your Profile</a>
+						
+					</div>
+					
+				</div>
+
+				<div class="container">
+		        <!-- <div class="panel panel-default"> -->
+		        <div class="" id="postlist">
+		           <!--  <div class="panel-body" style="border-bottom: solid 1px;">
+		               <section class="post-heading">
+		                    <div class="row">
+		                        <div class="col-md-12">
+		                            <div class="media">
+		                              <div class="media-left">
+		                                <a href="#">
+		                                  <img class="media-object photo-profile" src="http://0.gravatar.com/avatar/38d618563e55e6082adf4c8f8c13f3e4?s=40&d=mm&r=g" width="40" height="40" alt="..." style="border-radius: 50%;">
+		                                </a>
+		                              </div>
+		                              <div class="media-body">
+		                                <a href="#" class="anchor-username"><h4 class="media-heading">Bayu Darmantra</h4></a> 
+		                                <span><a class="anchor-time"><strong>Location</strong></a>. <a class="anchor-time">51 mins</a></span>
+		                                
+		                              </div>
+		                            </div>
+		                        </div>
+		                        
+		                    </div>             
+		               </section>
+		               <section class="post-body">
+		                   <p> Ayo Pindah Ke meykarta.</p>
+		               </section>
+		               <section class="post-footer">
+		                   <hr>
+		                   <div class="post-footer-option container">
+		                        <ul class="list-unstyled">
+		                            <li><a ><span>1</span> <i class="glyphicon glyphicon-thumbs-up"></i></a></li>
+		                            <li><a ><span>1</span> <i class="glyphicon glyphicon-comment"></i></a></li>
+		                        </ul>
+		                   </div>
+		                   <div class="post-footer-comment-wrapper" style="border-radius: 12px;">
+		                       <div class="comment-form">
+		                           
+		                       </div>
+		                       <div class="comment">
+		                            <div class="media" style="border: solid;border-radius: 12px;">
+		                              <div class="media-left">
+		                                <a href="#">
+		                                  <img class="media-object photo-profile" src="http://0.gravatar.com/avatar/38d618563e55e6082adf4c8f8c13f3e4?s=40&d=mm&r=g" width="32" height="32" alt="..." style="margin: 10px;border-radius: 50%;" >
+		                                </a>
+		                              </div>
+		                              <div class="media-body">
+		                                <a href="#" class="anchor-username"><h4 class="media-heading" style="margin-top: 10px;">Media heading</h4></a> 
+		                                <p> Komentara Bla ... Bla ... Bla ...</p>
+		                                <a class="anchor-time">51 mins</a>
+		                              </div>
+		                            </div>
+		                       </div>
+		                   </div>
+		               </section>
+		            </div>
+ -->
+		            <!-- <div class="panel-body" style="border-bottom: solid 1px;">
+		               <section class="post-heading">
+		                    <div class="row">
+		                        <div class="col-md-12">
+		                            <div class="media">
+		                              <div class="media-left">
+		                                <a href="#">
+		                                  <img class="media-object photo-profile" src="http://0.gravatar.com/avatar/38d618563e55e6082adf4c8f8c13f3e4?s=40&d=mm&r=g" width="40" height="40" alt="..." style="border-radius: 50%;">
+		                                </a>
+		                              </div>
+		                              <div class="media-body">
+		                                <a href="#" class="anchor-username"><h4 class="media-heading">Bayu Darmantra</h4></a> 
+		                                <span><a class="anchor-time"><strong>Location</strong></a>. <a class="anchor-time">51 mins</a></span>
+		                              </div>
+		                            </div>
+		                        </div>
+		                        
+		                    </div>             
+		               </section>
+		               <section class="post-body">
+		                   <p> Ayo Pindah Ke meykarta.</p>
+		               </section>
+		               <section class="post-footer">
+		                   <hr>
+		                   <div class="post-footer-option container">
+		                        <ul class="list-unstyled">
+		                            <li><a ><span>1</span> <i class="glyphicon glyphicon-thumbs-up"></i></a></li>
+		                            <li><a ><span>1</span> <i class="glyphicon glyphicon-comment"></i></a></li>
+		                        </ul>
+		                   </div>
+		                   <div class="post-footer-comment-wrapper" style="border-radius: 12px;">
+		                       <div class="comment-form">
+		                           
+		                       </div>
+		                       <div class="comment">
+		                            <div class="media" style="border: solid;border-radius: 12px;">
+		                              <div class="media-left">
+		                                <a href="#">
+		                                  <img class="media-object photo-profile" src="http://0.gravatar.com/avatar/38d618563e55e6082adf4c8f8c13f3e4?s=40&d=mm&r=g" width="32" height="32" alt="..." style="margin: 10px;border-radius: 50%;" >
+		                                </a>
+		                              </div>
+		                              <div class="media-body">
+		                                <a href="#" class="anchor-username"><h4 class="media-heading" style="margin-top: 10px;">Media heading</h4></a> 
+		                                <p> Komentara Bla ... Bla ... Bla ...</p>
+		                                <a class="anchor-time">51 mins</a>
+		                              </div>
+		                            </div>
+		                       </div>
+		                   </div>
+		               </section>
+		            </div> -->
+
+		            <!-- <div class="panel-body" style="border-bottom: solid 1px;">
+		               <section class="post-heading">
+		                    <div class="row">
+		                        <div class="col-md-12">
+		                            <div class="media">
+		                              <div class="media-left">
+		                                <a href="#">
+		                                  <img class="media-object photo-profile" src="http://0.gravatar.com/avatar/38d618563e55e6082adf4c8f8c13f3e4?s=40&d=mm&r=g" width="40" height="40" alt="..." style="border-radius: 50%;">
+		                                </a>
+		                              </div>
+		                              <div class="media-body">
+		                                <a href="#" class="anchor-username"><h4 class="media-heading">Bayu Darmantra</h4></a> 
+		                                <span><a class="anchor-time"><strong>Location</strong></a>. <a class="anchor-time">51 mins</a></span>
+		                              </div>
+		                            </div>
+		                        </div>
+		                        
+		                    </div>             
+		               </section>
+		               <section class="post-body">
+		                   <p> Ayo Pindah Ke meykarta.</p>
+		               </section>
+		               <section class="post-footer">
+		                   <hr>
+		                   <div class="post-footer-option container">
+		                        <ul class="list-unstyled">
+		                            <li><a ><span>1</span> <i class="glyphicon glyphicon-thumbs-up"></i></a></li>
+		                            <li><a ><span>1</span> <i class="glyphicon glyphicon-comment"></i></a></li>
+		                        </ul>
+		                   </div>
+		                   <div class="post-footer-comment-wrapper" style="border-radius: 12px;">
+		                       <div class="comment-form">
+		                           
+		                       </div>
+		                       <div class="comment">
+		                            <div class="media" style="border: solid;border-radius: 12px;">
+		                              <div class="media-left">
+		                                <a href="#">
+		                                  <img class="media-object photo-profile" src="http://0.gravatar.com/avatar/38d618563e55e6082adf4c8f8c13f3e4?s=40&d=mm&r=g" width="32" height="32" alt="..." style="margin: 10px;border-radius: 50%;" >
+		                                </a>
+		                              </div>
+		                              <div class="media-body">
+		                                <a href="#" class="anchor-username"><h4 class="media-heading" style="margin-top: 10px;">Media heading</h4></a> 
+		                                <p> Komentara Bla ... Bla ... Bla ...</p>
+		                                <a class="anchor-time">51 mins</a>
+		                              </div>
+		                            </div>
+		                       </div>
+		                   </div>
+		               </section>
+		            </div> -->
+
+
+		        </div>   
+			</div>
+		</div>
+	</div>
+	<div id="footer" style="background-color: #f9ff07;">
+		<div class="col-xs-12 navbar-inverse navbar-fixed-bottom">
+		  	<div class="row" id="bottomNav">
+			    <div class="col-xs-4 text-center"><a href="home.html"><i class="glyphicon glyphicon-home circle"></i></a></div>
+			    <div class="col-xs-4 text-center"><a href="laporfloat.html"><i class="glyphicon glyphicon-plus circle"></i></a></div>
+			    <div class="col-xs-4 text-center"><a href="profile.html"><i class="glyphicon glyphicon-user circle"></i></a></div>
+			    <!-- <div class="col-xs-4 text-center"><a href="#"><img src="images/n2.jpg" class="img-responsive" alt=""></a></div>
+			    <div class="col-xs-4 text-center"><a href="#"><img src="images/n2.jpg" class="img-responsive" alt=""></a></div>
+			    <div class="col-xs-4 text-center"><a href="#"><img src="images/n2.jpg" class="img-responsive" alt=""></a></div> -->
+		  	</div>
+		</div>
+	</div>
+<script src="js/jquery.nicescroll.js"></script>
+<script src="js/scripts.js"></script>
+<script type="text/javascript">
+	$(function () {
+    
+	    // if (localStorage.user) {
+	    //     console.log('session ON');
+	    //     console.log(localStorage.user);
+	    //     // home();
+	    // } else{
+	    //     console.log('session OFF');
+	    //     logout();
+	    // }
+	    run_waitMe('#postlist', 'ios');
+	    if (localStorage.user) {
+        console.log('session ON');
+        console.log(localStorage.user);
+        var form_data = new FormData();
+        form_data.append('id', localStorage.user);
+        form_data.append('typepost', 'all');
+        $.ajax({
+            url: base_url+'getlistpost.php', // point to server-side PHP script 
+            dataType: 'json',  // what to expect back from the PHP script, if anything
+            cache: false,
+            contentType: false,
+            processData: false,
+            data: form_data,
+            type: 'post',
+            success: function(postvideo){
+              	var listpost = '';
+              	console.log(postvideo);
+              	console.log(postvideo['List_Status'][0]['Status']);
+              	if (postvideo['List_Status'][0]['Data']) {
+                console.log(postvideo['List_Status'][0]['Data']);
+                var datapost = postvideo['List_Status'][0]['Data'];
+
+                // console.log(datapost);
+                for (var i = 0; i < datapost.length; i++) {
+
+                	if (datapost[i]['post_by'] == localStorage.user) {
+	                		if (parseInt(datapost[i]['JUMLAH_COMMENT']) > 0 ) {
+								if (datapost[i]['LIST_COMMENT']) {
+				            		var tempcomm = datapost[i]['LIST_COMMENT'];
+				            		var commjum = tempcomm.length;
+
+				            		for (var j = 0; j < tempcomm.length; j++) {
+				            			console.log(j+1);
+				            			console.log(commjum);
+				            			if ((j+1) == commjum ) {
+				            				console.log('Muncul '+commjum);
+				            				var isicomment = '';
+				            				isicomment += '<div class="post-footer-comment-wrapper" style="border-radius: 12px;">';
+											isicomment += '<div class="comment-form">';
+
+											isicomment += '</div>';
+											isicomment += '<div class="comment">';
+											isicomment += '<div class="media" style="border: solid;border-radius: 12px;">';
+											isicomment += '<div class="media-left">';
+											isicomment += '<a href="#">';
+											if (tempcomm[j]['idlogin']) {
+												var temppic = tempcomm[j]['profile_pic'];
+												var spic = temppic.split('://');
+												if (spic[1]) {
+													isicomment += '<img class="media-object photo-profile" src="'+tempcomm[j]['profile_pic']+'" width="32" height="32" alt="..." style="margin: 10px;border-radius: 50%;" >';
+												} else {
+													isicomment += '<img class="media-object photo-profile" src="'+base_url_profilepic+tempcomm[j]['profile_pic']+'" width="32" height="32" alt="..." style="margin: 10px;border-radius: 50%;" >';
+												}
+												
+											} else {
+												isicomment += '<img class="media-object photo-profile" src="'+base_url_profilepic+tempcomm[j]['profile_pic']+'" width="32" height="32" alt="..." style="margin: 10px;border-radius: 50%;" >';
+											}
+											
+											isicomment += '</a>';
+											isicomment += '</div>';
+											isicomment += '<div class="media-body">';
+											isicomment += '<a href="#" class="anchor-username"><h4 class="media-heading" style="margin-top: 10px;">'+tempcomm[j]['nama_depan']+'</h4></a> ';
+											isicomment += '<p>'+tempcomm[j]['comment_text']+'.</p>';
+											isicomment += '<a class="anchor-time">'+get_time(tempcomm[j]['create_at'])+'</a>';
+											isicomment += '</div>';
+											isicomment += '</div>';
+											isicomment += '</div>';
+											isicomment += '</div>';
+
+											console.log(isicomment);
+											
+				            			}
+				            		}
+				            	}
+							}
+							
+	                		listpost += '<div class="panel-body" style="border-bottom: solid 1px;" onclick="detail('+datapost[i]['id_post']+')">';
+							listpost += '<section class="post-heading">';
+							listpost += '<div class="row">';
+							listpost += '<div class="col-md-12">';
+							listpost += '<div class="media">';
+							listpost += '<div class="media-left">';
+							listpost += '<a href="#">';
+
+							if (datapost[i]['idlogin']) {
+								var temppic = datapost[i]['profile_pic'];
+								var spic = temppic.split('://');
+								if (spic[1]) {
+									listpost += '<img class="media-object photo-profile" src="'+datapost[i]['profile_pic']+'" width="40" height="40" alt="..." style="border-radius: 50%;">';
+								} else {
+									listpost += '<img class="media-object photo-profile" src="'+base_url_profilepic+datapost[i]['profile_pic']+'" width="40" height="40" alt="..." style="border-radius: 50%;">';
+								}
+								
+							} else {
+								listpost += '<img class="media-object photo-profile" src="'+base_url_profilepic+datapost[i]['profile_pic']+'" width="40" height="40" alt="..." style="border-radius: 50%;">';
+							}
+							
+							listpost += '</a>';
+							listpost += '</div>';
+							listpost += '<div class="media-body">';
+							listpost += '<a href="#" class="anchor-username"><h4 class="media-heading">'+datapost[i]['nama_depan']+'</h4></a> ';
+							listpost += '<span><a class="anchor-time"><strong>'+datapost[i]['location']+'</strong></a>. <a class="anchor-time">'+get_time(datapost[i]['create_at'])+'</a></span>';
+							listpost += '</div>';
+							listpost += '</div>';
+							listpost += '</div>';
+
+							listpost += '</div>';             
+							listpost += '</section>';
+							listpost += '<section class="post-body">';
+							listpost += '<p>'+datapost[i]['note']+'.</p>';
+
+	                  	if (datapost[i]['type'] == 'text') {
+
+	                  	} else if (datapost[i]['type'] == 'photo') {
+
+	                  		
+							listpost += '<img src="'+base_url_post+datapost[i]['file_path_text']+'" style="width: 100%" alt="image"/>';
+							
+
+	                  	} else if (datapost[i]['type'] == 'video') {
+
+
+							listpost += '<video width="400" controlslist="nodownload" controls id="prevvid" style="width: 100%" >';
+							listpost += '<source src="'+base_url_videos+datapost[i]['file_path_text']+'" id="videopic">';
+							listpost += '</video>';
+
+	                  	} 
+
+	                  		listpost += '</section>';
+							listpost += '<section class="post-footer">';
+							listpost += '<hr>';
+							listpost += '<div class="post-footer-option container">';
+							listpost += '<ul class="list-unstyled">';
+							listpost += '<li><a ><span>'+parseInt(datapost[i]['JUMLAH_LIKE'])+'</span> <i class="glyphicon glyphicon-thumbs-up"></i> </a></li>';
+							listpost += '<li><a ><span>'+parseInt(datapost[i]['JUMLAH_COMMENT'])+'</span> <i class="glyphicon glyphicon-comment"></i></a></li>';
+							listpost += '</ul>';
+							listpost += '</div>';
+
+							if (parseInt(datapost[i]['JUMLAH_COMMENT']) > 0 ) {
+								listpost += isicomment;
+							}
+							listpost += '</section>';
+							listpost += '</div>';
+                  	}
+                }
+
+                console.log(listpost);
+                
+                document.getElementById('postlist').innerHTML = listpost;
+
+              	} else {
+	                console.log(postvideo['List_Status'][0]['Status']);
+	                document.getElementById('postlist').innerHTML = '';
+                // alert('List Unavailable');
+              	}
+
+				stop_waitMe('#postlist');
+            }
+        });
+
+		$.ajax({
+            url: base_url+'getprofile.php', // point to server-side PHP script 
+            dataType: 'json',  // what to expect back from the PHP script, if anything
+            cache: false,
+            contentType: false,
+            processData: false,
+            data: form_data,
+            type: 'post',
+            success: function(profile){
+              	var listpost = '';
+              	console.log(profile);
+              	console.log(profile['Data_Status'][0]['Status']);
+              	if (profile['Data_Status'][0]['Data']) {
+                console.log(profile['Data_Status'][0]['Data']);
+                var datapost = profile['Data_Status'][0]['Data'];
+                
+                if (datapost[0]['idlogin']) {
+                	var temppic = datapost[0]['profile_pic'];
+					var spic = temppic.split('://');
+					if (spic[1]) {
+						document.getElementById('fotouser').src = datapost[0]['profile_pic'];
+					} else {
+						document.getElementById('fotouser').src = base_url_profilepic+datapost[0]['profile_pic'];
+					}
+                	
+                } else {
+					document.getElementById('fotouser').src = base_url_profilepic+datapost[0]['profile_pic'];
+                }
+                
+                document.getElementById('namauser').innerHTML = datapost[0]['nama_depan'];
+                document.getElementById('tanggalgabung').innerHTML = datapost[0]['is_create_at'];
+
+              	} else {
+                console.log(profile['Data_Status'][0]['Status']);
+                // alert('List Unavailable');
+              	}
+            }
+        });
+
+		var nform_data = new FormData();
+        nform_data.append('idc', localStorage.user);
+         $.ajax({
+            url: base_url+'getlistnotifcomment.php', // point to server-side PHP script 
+            dataType: 'json',  // what to expect back from the PHP script, if anything
+            cache: false,
+            contentType: false,
+            processData: false,
+            data: nform_data,
+            type: 'post',
+            success: function(commentf){
+              	var listcomment = '';
+              	console.log(commentf);
+              	console.log(commentf['List_Status'][0]['Status']);
+              	if (commentf['List_Status'][0]['Data']) {
+                console.log(commentf['List_Status'][0]['Data']);
+                var datapost = commentf['List_Status'][0]['Data'];
+
+                // console.log(datapost);
+                for (var i = 0; i < datapost.length; i++) {
+
+                	if (datapost[i]['comment_by'] != localStorage.user) {
+						listcomment += '<div class="comment" onclick="goto_post('+datapost[i]['id_post']+')">';
+						listcomment += '<div class="media" style="background-color: white;background-color: #ffffff;border-bottom: solid 1px;">';
+						listcomment += '<div class="media-left">';
+						listcomment += '<a href="#">';
+						if (datapost[i]['idlogin']) {
+							var temppic = datapost[i]['profile_pic'];
+							var spic = temppic.split('://');
+							if (spic[1]) {
+								listcomment += '<img class="media-object photo-profile" src="'+datapost[i]['profile_pic']+'" width="32" height="32" alt="..." style="margin: 10px;">';
+							} else {
+								listcomment += '<img class="media-object photo-profile" src="'+base_url_profilepic+datapost[i]['profile_pic']+'" width="32" height="32" alt="..." style="margin: 10px;">';
+							}
+							
+						} else {
+							listcomment += '<img class="media-object photo-profile" src="'+base_url_profilepic+datapost[i]['profile_pic']+'" width="32" height="32" alt="..." style="margin: 10px;">';
+						}
+						
+						listcomment += '</a>';
+						listcomment += '</div>';
+						listcomment += '<div class="media-body">';
+						listcomment += '<a class="anchor-username"><h6 class="media-heading" style="margin-top: 10px;color: black;"> </h6></a> ';
+						if (datapost[i]['com_type'] == 'comment') {
+							listcomment += '<p style="font-size: 8px;float: left;margin-left: 10px;">'+datapost[i]['nama_depan']+' Mengomentari post anda : '+datapost[i]['comment_text']+'</p>';
+						} else {
+							listcomment += '<p style="font-size: 8px;float: left;margin-left: 10px;">'+datapost[i]['nama_depan']+' Menyukai post anda</p>';
+						}
+
+						listcomment += '<p style="font-size: 8px;float: left;margin-left: 10px;">'+get_time(datapost[i]['create_at'])+'</p>';
+						
+						listcomment += '</div>';
+						listcomment += '</div>';
+						listcomment += '</div>';
+                	}
+
+					
+                  
+                }
+
+                console.log(listcomment);
+                
+                document.getElementById('commentlist').innerHTML = listcomment;
+
+              	} else {
+	                console.log(commentf['List_Status'][0]['Status']);
+	                document.getElementById('commentlist').innerHTML = '';
+                // alert('List Unavailable');
+              	}
+            }
+        });
+        // home();
+      } else{
+        console.log('session OFF');
+        logout();
+      }
+    
+    });
+
+    function logout(){
+      	localStorage.clear();
+      	console.log('session OFF');
+      	// LogoutFB();
+      	location.href = "index.html";  
+    }
+
+    function get_time(dtime) {
+    	// body...
+    	var thisDate = moment().format('YYYY-MM-DD HH:mm:ss');
+    	console.log(dtime);
+    	console.log(thisDate);
+    	var startTime = dtime;
+		var endTime = thisDate;
+		var hours = parseInt(moment.duration(moment(endTime, 'YYYY/MM/DD HH:mm').diff(moment(startTime, 'YYYY/MM/DD HH:mm'))).asHours());
+		var mints = parseInt(moment.duration(moment(endTime, 'YYYY/MM/DD HH:mm').diff(moment(startTime, 'YYYY/MM/DD HH:mm'))).asMinutes());
+		console.log(hours);
+		if (mints <= 60) {
+			return mints+' Minutes Ago';
+		} else if (hours <= 24) {
+			return hours+' Hours Ago';
+		} else {
+			return dtime;
+		}
+		
+    }
+    function goto_post(id) {
+    	// body...
+    	localStorage.iddetail = id;
+    	location.href = "detailpost.html?id="+id;
+    }
+    function detail(id) {
+    	// body...
+    	localStorage.iddetail = id;
+    	location.href = "detailpost.html?id="+id;
+    }
+</script>
+<script type="text/javascript">
+	function editprofile() {
+		// alert(typec);		
+		location.href = "editprofile.html";
+
+	}
+	function home() {
+		// alert(typec);		
+		location.href = "home.html";
+
+	}
+</script>
+</body>
+</html>

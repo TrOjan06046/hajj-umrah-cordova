@@ -1,0 +1,485 @@
+<!--A Design by W3layouts
+Author: W3layout
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>SapaHaji</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Flat Profile App Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android  Compatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() {setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<meta charset utf="8">
+       <!--font-awsome-css-->
+<link rel="stylesheet" href="css/font-awesome.min.css"> 
+		<!--bootstrap-->
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+		<!--custom css-->
+<link href="css/style.css" rel="stylesheet" type="text/css"/>
+<!--component-css-->
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<!-- <link type="text/css" rel="stylesheet" href="css/style2.css" />
+<link rel="stylesheet" type="text/css" href="css/component.css" /> -->
+<script type="text/javascript" src="js/base_url.js"></script>
+			 <!--script-->
+<script src="js/bigSlide.js"></script>
+    <script>
+		$(document).ready(function() {
+		$('.menu-link').bigSlide({
+		    menu: '#menu',
+		    side: 'right'
+	  	});
+	});
+    </script>
+            <!--script-->
+<script src="js/responsiveslides.min.js"></script>
+	 <script>
+		$(function () {
+		  $("#slider").responsiveSlides({
+			auto: true,
+			nav: true,
+			speed: 500,
+			namespace: "callbacks",
+			pager: true,
+		  });
+		});
+	  </script>
+		<!--script-->
+		<script src="js/pie-chart.js" type="text/javascript"></script>
+ <script type="text/javascript">
+
+        $(document).ready(function () {
+           
+			 $('#demo-pie-1').pieChart({
+                barColor: '#68b828',
+                trackColor: '#E4E2E2',
+                lineCap: 'butt',
+                lineWidth: 10,
+                onStep: function (from, to, percent) {
+                    $(this.element).find('.pie-value').text(Math.round(percent) + '%');
+                }
+            });
+
+            $('#demo-pie-2').pieChart({
+                barColor: '#5bc0de',
+                trackColor: '#E4E2E2',
+                lineCap: 'butt',
+                lineWidth: 10,
+                onStep: function (from, to, percent) {
+                    $(this.element).find('.pie-value').text(Math.round(percent) + '%');
+                }
+            });
+
+            $('#demo-pie-3').pieChart({
+                barColor: '#d9534f',
+                trackColor: '#E4E2E2',
+                lineCap: 'square',
+                lineWidth: 10,
+                onStep: function (from, to, percent) {
+                    $(this.element).find('.pie-value').text(Math.round(percent) + '%');
+                }
+            });
+
+           
+        });
+
+    </script>
+    <script>
+
+
+ 		window.fbAsyncInit = function() {
+	    	FB.init({
+	      		appId            : '205101850032290',
+	      		autoLogAppEvents : true,
+	      		xfbml            : true,
+	      		version          : 'v2.10'
+	    	});
+
+	    	FB.AppEvents.logPageView();
+
+	    	FB.getLoginStatus(function(response) {
+  				if (response.status === 'connected') {
+    				console.log('Logged in.');
+  				}
+  				else {
+    				// FB.login(function(response) {
+		      // 			console.log(response);
+		      // 			getUserData();
+		    		// });
+  				}
+			});
+  		};
+
+  		function login_fcbook() {
+    		FB.getLoginStatus(function(response) {
+      			statusChangeCallback(response);
+    		});
+  		}
+
+  		function statusChangeCallback(response) {
+		    console.log('statusChangeCallback');
+		    console.log(response);
+		    // The response object is returned with a status field that lets the
+		    // app know the current login status of the person.
+		    // Full docs on the response object can be found in the documentation
+		    // for FB.getLoginStatus().
+		    if (response.status === 'connected') {
+		      // Logged into your app and Facebook.
+		       getUserData();
+		    } else {
+		      // The person is not logged into your app or we are unable to tell.
+		       FB.login(function(response) {
+	      			console.log(response);
+	      			getUserData();
+	    		});
+		    }
+  		}
+
+  		function getUserData() {
+  			FB.api('/me', 'GET', {fields: 'first_name,last_name,name,id,email,gender,hometown,picture.width(300).height(300)'}, function(response) {
+  			// FB.api('/me', function(response) {
+      			console.log('Successful login for: ' + response.name);
+      			console.log(response);
+      			check_data(response,'facebook');
+    		});
+    		// console.log('Welcome!  Fetching your information.... ');
+    		// FB.api('/me', 'GET', {fields: 'first_name,last_name,name,id,address,profile_pic,gender,email,picture.width(300).height(300)'}, function(response) {
+	     //  		console.log('Successful login for: ' + response);
+	     //  		console.log(response);
+	     //  		// document.getElementById('status').innerHTML = 'Thanks for logging in, ' + response.name + '!';
+    		// });
+  		}		
+
+  		function LogoutFB() {
+  			// body...
+  			FB.logout(function(response) {
+			  // user is now logged out
+			});
+  		}
+
+
+  		(function(d, s, id){
+     		var js, fjs = d.getElementsByTagName(s)[0];
+     		if (d.getElementById(id)) {return;}
+     			js = d.createElement(s); js.id = id;
+     			js.src = "//connect.facebook.net/en_US/sdk.js";
+    	 		fjs.parentNode.insertBefore(js, fjs);
+   		}(document, 'script', 'facebook-jssdk'));
+
+	</script>
+
+<link href='//fonts.googleapis.com/css?family=Josefin+Sans:400,700italic,700,600italic,400italic,600,300italic,300,100italic,100' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<div class="body-back">
+
+		<div class="row contact">
+			<table width="100%" align="center">
+				<tbody >
+					<tr>
+						<td style="text-align: center;"><img src="images/dsgn/logologin1.png" alt=" " style="width: 350px;margin-bottom: 10px;" ></td>
+					</tr>
+					<tr>
+						<td style="text-align: center;"><img onclick="login_gplus()" class="bt" src="images/dsgn/btnlogin1.png" alt=" "  style="margin-top: 10px;width: 350px;"></td>
+					</tr>
+					<tr>
+						<td style="text-align: center;"><img onclick="loginWithFB()" class="bt" src="images/dsgn/btnlogin2.png" alt=" "  style="margin-top: 10px;width: 350px;"></td>
+					</tr>
+					<tr>
+						<td style="text-align: center;"><h4 style="text-align: center;margin-top: 10px;background-color: #f9ff07;"><a onclick="reg_page()">Login</a> Atau <a onclick="login_page()">Daftar</a></h4></td>
+					</tr>
+
+				</tbody>
+			</table>
+  			
+		</div>
+
+		<!-- <div class="row">
+  			<div class="col-md-12">
+				<img class="ri" src="images/dsgn/logologin1.png" alt=" " style="margin-top: 240px;">
+			</div>
+		</div>
+
+		<div class="row">
+  			<div class="col-md-12">
+				<a onclick="login_gplus()"><img class="bt" src="images/dsgn/btnlogin1.png" alt=" "  style="margin-top: 435px;"></a>
+			</div>
+		</div>
+
+		<div class="row">
+  			<div class="col-md-12">
+				<a onclick="loginWithFB()"><img class="bt" src="images/dsgn/btnlogin2.png" alt=" "  style="margin-top: 500px;"></a>
+			</div>
+		</div>
+
+		<h4 style="text-align: center;margin-top: 574px;background-color: #f9ff07;"><a onclick="reg_page()">Login</a> Atau <a onclick="login_page()">Daftar</a></h4>
+ -->
+		<!-- <h4 style="text-align: center;margin-top: 574px;background-color: #f9ff07;"><a onclick="login_fcbook()">logFB</a> Atau <a onclick="checkAppFB()">cekFB</a> Atau <a onclick="reg_page()">Login</a> Atau <a onclick="login_page()">Daftar</a></h4> -->
+		
+  		<!-- <h4 style="text-align: center;margin-top: 574px;background-color: #f9ff07;"><a onclick="LogoutFB()">LogoutFB</a> Atau <a onclick="reg_page()">Login</a> Atau <a onclick="login_page()">Daftar</a></h4> -->
+		
+		
+	</div>
+
+	<!-- <div class="body-back">
+		<div class="row">
+  			<h2>Atau <a href="register.html">Daftar</a></h2>
+		</div>
+		
+	</div> -->
+	
+<script src="js/jquery.nicescroll.js"></script>
+<script src="js/scripts.js"></script>
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript">
+
+	function loginWithFB(){
+	  	facebookConnectPlugin.login(["public_profile","email"],function(result){
+	    	//calling api after login success
+	    facebookConnectPlugin.api("/me?fields=email,name,picture",
+	    	["public_profile","email"]
+	    ,function(userData){
+	    	//API success callback
+	        alert(JSON.stringify(userData));
+	    },function(error){
+	        //API error callback
+	        alert(JSON.stringify(error));
+	    });
+	    },function(error){
+	      //authenication error callback
+	      alert(JSON.stringify(error));
+	    });
+	}
+
+	function logoutAppFB() {
+		// body...
+		facebookConnectPlugin.logout(function(result){
+			alert(JSON.stringify(result));
+	    },function(error){
+	      	//authenication error callback
+	      	alert(JSON.stringify(error));
+	    });
+	}
+
+	function checkAppFB() {
+		// body...
+		facebookConnectPlugin.getLoginStatus(function(result){
+			alert(JSON.stringify(result));
+	    },function(error){
+	      	//authenication error callback
+	      	alert(JSON.stringify(error));
+	    });
+	}
+		
+</script>
+<script type="text/javascript">
+
+
+	function check_data(datauser,sosmedtype) {
+		// body...
+		console.log(datauser)
+		var form_data = new FormData();
+        
+        form_data.append('id', datauser.id);
+        form_data.append('loginwith', sosmedtype);
+
+        $.ajax({
+          	url: base_url+'getuserdataexist.php', // point to server-side PHP script 
+          	dataType: 'json',  // what to expect back from the PHP script, if anything
+          	cache: false,
+          	contentType: false,
+          	processData: false,
+          	data: form_data,
+          	type: 'post',
+          	success: function(loginuser){
+            	console.log(loginuser);
+            	// console.log(loginuser['Data_Status'][0]['Status']);
+            	// console.log(loginuser['Data_Status'][0]['Data'][0]['id']);
+            	if (loginuser['Data_Status'][0]['Status'] == 'Success') {
+            		console.log(loginuser['Data_Status'][0]['Data'][0]['id']);
+            		localStorage.user = loginuser['Data_Status'][0]['Data'][0]['id'];
+					// localStorage.token_user = loginn.token;
+	                console.log('session ON');
+	                home();
+            	} else {
+            		console.log(loginuser['Data_Status'][0]['Status']);
+            		var form_data = new FormData();
+            		var sexs = 'Perempuan';
+            		if (datauser.gender == 'male') {
+            			sexs = 'Laki - Laki';
+            		}
+			        form_data.append('firstname', datauser.name);
+			        form_data.append('id', datauser.id);
+			        form_data.append('imgurl', datauser.picture.data.url);
+			        form_data.append('sexs', sexs);
+			        form_data.append('regby', sosmedtype);
+			        $.ajax({
+			          	url: base_url+'registersosmed.php', // point to server-side PHP script 
+			          	dataType: 'json',  // what to expect back from the PHP script, if anything
+			          	cache: false,
+			          	contentType: false,
+			          	processData: false,
+			          	data: form_data,
+			          	type: 'post',
+			          	success: function(registeruser){
+			            console.log(registeruser);
+			            console.log(registeruser['Register_Status'][0]['Status']);
+
+			            if (registeruser['Register_Status'][0]['Status'] == 'Success') {
+			            	check_data(datauser,sosmedtype);
+			            } else {
+			            	alert('Registrasi user gagal .. ');
+			            }
+			            
+			          	}
+			        });  
+            	}
+          	}
+        });
+	}
+	
+	function home(){
+        location.href = "home.html";  
+    }
+
+    $(function () {
+
+    
+      	if (localStorage.user) {
+	        console.log('session ON');
+	        console.log(localStorage.user);
+	        // console.log(localStorage.token_user);
+	        home();
+      	} else{
+        	console.log('session OFF');
+      	}
+    
+
+    });
+</script>
+<script type="text/javascript">
+
+
+  	app.initialize();
+
+
+    function isAvailable() {
+    	window.plugins.googleplus.isAvailable(function(avail) {alert(avail)});
+  	}
+
+  	function trySilentLogin() {
+	    window.plugins.googleplus.trySilentLogin(
+	        {},
+	        function (obj) {
+	          	// alert(JSON.stringify(obj));
+	          	// alert("Data: " + obj.email +" Data: " + obj.userId+" Data: " + obj.displayName+" Data: " + obj.imageUrl+" Data: " + obj.gender);
+	          	check_datagp(obj,'googleplus');
+	        },
+	        function (msg) {
+	          	alert("error: " + msg);
+	        }
+	    );
+	}
+
+
+  	function login_gplus() {
+    	window.plugins.googleplus.login(
+	        {},
+	        function (obj) {
+
+	        	check_datagp(obj,'googleplus');
+	        	// alert(JSON.stringify(obj));
+	         //  	alert("Data: " + obj.email +" Data: " + obj.userId+" Data: " + obj.displayName+" Data: " + obj.imageUrl+" Data: " + obj.gender);
+	          // document.querySelector("#image").src = obj.imageUrl;
+	          // document.querySelector("#image").style.visibility = 'visible';
+	          // document.querySelector("#feedback").innerHTML = "Hi, " + obj.displayName + ", " + obj.email;
+	        },
+	        function (msg) {
+	        	alert("error: " + msg);
+	          // document.querySelector("#feedback").innerHTML = "error: " + msg;
+	        }
+    	);
+  	}
+
+	function reg_page(){
+        location.href = "login.html";  
+    }
+    function login_page(){
+        location.href = "register.html";  
+    }
+    function home(){
+        location.href = "home.html";  
+    }
+
+    function check_datagp(datauser,sosmedtype) {
+		// body...
+		console.log(datauser)
+		var form_data = new FormData();
+        
+        form_data.append('id', datauser.userId);
+        form_data.append('loginwith', sosmedtype);
+
+        $.ajax({
+          	url: base_url+'getuserdataexist.php', // point to server-side PHP script 
+          	dataType: 'json',  // what to expect back from the PHP script, if anything
+          	cache: false,
+          	contentType: false,
+          	processData: false,
+          	data: form_data,
+          	type: 'post',
+          	success: function(loginuser){
+            	console.log(loginuser);
+            	// console.log(loginuser['Data_Status'][0]['Status']);
+            	// console.log(loginuser['Data_Status'][0]['Data'][0]['id']);
+            	if (loginuser['Data_Status'][0]['Status'] == 'Success') {
+            		console.log(loginuser['Data_Status'][0]['Data'][0]['id']);
+            		localStorage.user = loginuser['Data_Status'][0]['Data'][0]['id'];
+					// localStorage.token_user = loginn.token;
+	                console.log('session ON');
+	                home();
+            	} else {
+            		console.log(loginuser['Data_Status'][0]['Status']);
+            		var form_data = new FormData();
+            		var sexs = 'Laki - Laki';
+            		if (datauser.gender) {
+            			if (datauser.gender == 'female') {
+	            			sexs = 'Perempuan';
+	            		}
+            		}
+			        form_data.append('firstname', datauser.displayName);
+			        form_data.append('id', datauser.userId);
+			        form_data.append('imgurl', datauser.imageUrl);
+			        form_data.append('sexs', sexs);
+			        form_data.append('regby', sosmedtype);
+			        $.ajax({
+			          	url: base_url+'registersosmedgplus.php', // point to server-side PHP script 
+			          	dataType: 'json',  // what to expect back from the PHP script, if anything
+			          	cache: false,
+			          	contentType: false,
+			          	processData: false,
+			          	data: form_data,
+			          	type: 'post',
+			          	success: function(registeruser){
+			            console.log(registeruser);
+			            console.log(registeruser['Register_Status'][0]['Status']);
+
+			            if (registeruser['Register_Status'][0]['Status'] == 'Success') {
+			            	check_data(datauser,sosmedtype);
+			            } else {
+			            	alert('Registrasi user gagal .. ');
+			            }
+			            
+			          	}
+			        });  
+            	}
+          	}
+        });
+	}
+</script>
+</body>
+</html>
